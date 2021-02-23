@@ -1,0 +1,17 @@
+html, body, p {
+    margin: 0;
+}
+body {
+    /* Hide scrollbar(s) - main > canvas renderer uses 100% width & height, which creates scrollbar(s). */
+    overflow: hidden;
+}
+main {
+    height: 100vh;
+}
+p.info {
+    padding: 0 2em;
+    font-size: large;
+    font-weight: 600;
+    color: #ffeeee;
+    background-color: #ea5555;
+}
