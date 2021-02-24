@@ -1,0 +1,111 @@
+{
+	"contentrating" : "Everyone",
+	"description" : "[h2] A web-wallpaper to use your favorite image and Particles.js together![/h2]\r\n\r\n[b]Use [url=https://vincentgarreau.com/particles.js/]this[/url] site to create a new json file with your custom particle effects (Download current config json -> copy and paste in the 'Particles.js JSON configuration' property.)[/b]\r\n\r\n[b]Image used as background in the image previews: [/b] \r\n\"Hotaru\" By Rella [url=https://www.pixiv.net/member_illust.php?mode=medium&illust_id=64495434]Post[/url] / [url=http://i.imgur.com/4pqqBZm.jpg]Direct Image[/url] (1600×900)\r\n\"Lakeside Sunrise\" By Louis Coyle [url=https://dribbble.com/shots/1816328-Lakeside-Sunrise]Post[/url] / [url=https://cdn.dribbble.com/users/13449/screenshots/1816328/attachments/332811/Lakeside_Sunrise_3840x2160.jpg]Direct Image[/url] (3840×2160)\r\n\r\nCreated using plain old HTML, CSS, Javascript and Particles.js.",
+	"file" : "index.html",
+	"general" : 
+	{
+		"properties" : 
+		{
+			"background_image" : 
+			{
+				"condition" : "options_image_file.value !== true",
+				"index" : 5,
+				"order" : 105,
+				"text" : "Background Image URL",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"background_image_file" : 
+			{
+				"condition" : "options_image_file.value === true",
+				"index" : 6,
+				"order" : 106,
+				"text" : "Background Image File",
+				"type" : "file",
+				"value" : ""
+			},
+			"background_position" : 
+			{
+				"index" : 2,
+				"order" : 102,
+				"text" : "Background Position",
+				"type" : "textinput",
+				"value" : ""
+			},
+			"background_repeat" : 
+			{
+				"index" : 3,
+				"options" : 
+				[
+					{
+						"label" : "repeat",
+						"value" : "repeat"
+					},
+					{
+						"label" : "repeat-x",
+						"value" : "repeat-x"
+					},
+					{
+						"label" : "repeat-y",
+						"value" : "repeat-y"
+					},
+					{
+						"label" : "space",
+						"value" : "space"
+					},
+					{
+						"label" : "round",
+						"value" : "round"
+					},
+					{
+						"label" : "no-repeat",
+						"value" : "no-repeat"
+					}
+				],
+				"order" : 103,
+				"text" : "Background Repeat",
+				"type" : "combo",
+				"value" : "no-repeat"
+			},
+			"background_size" : 
+			{
+				"index" : 1,
+				"order" : 101,
+				"text" : "Background Size",
+				"type" : "textinput",
+				"value" : "100%"
+			},
+			"config" : 
+			{
+				"index" : 0,
+				"order" : 100,
+				"text" : "Particles.js JSON configuration",
+				"type" : "textinput",
+				"value" : "{     \"particles\": {       \"number\": {         \"value\": 160,         \"density\": {           \"enable\": true,           \"value_area\": 800         }       },       \"color\": {         \"value\": \"#ffffff\"       },       \"shape\": {         \"type\": \"circle\",         \"stroke\": {           \"width\": 0,           \"color\": \"#000000\"         },         \"polygon\": {           \"nb_sides\": 5         },         \"image\": {           \"src\": \"img/github.svg\",           \"width\": 100,           \"height\": 100         }       },       \"opacity\": {         \"value\": 1,         \"random\": true,         \"anim\": {           \"enable\": true,           \"speed\": 1,           \"opacity_min\": 0,           \"sync\": false         }       },       \"size\": {         \"value\": 3,         \"random\": true,         \"anim\": {           \"enable\": false,           \"speed\": 4,           \"size_min\": 0.3,           \"sync\": false         }       },       \"line_linked\": {         \"enable\": false,         \"distance\": 150,         \"color\": \"#ffffff\",         \"opacity\": 0.4,         \"width\": 1       },       \"move\": {         \"enable\": true,         \"speed\": 1,         \"direction\": \"none\",         \"random\": true,         \"straight\": false,         \"out_mode\": \"out\",         \"bounce\": false,         \"attract\": {           \"enable\": false,           \"rotateX\": 600,           \"rotateY\": 600         }       }     },     \"interactivity\": {       \"detect_on\": \"canvas\",       \"events\": {         \"onhover\": {           \"enable\": true,           \"mode\": \"bubble\"         },         \"onclick\": {           \"enable\": true,           \"mode\": \"repulse\"         },         \"resize\": true       },       \"modes\": {         \"grab\": {           \"distance\": 400,           \"line_linked\": {             \"opacity\": 1           }         },         \"bubble\": {           \"distance\": 250,           \"size\": 0,           \"duration\": 2,           \"opacity\": 0,           \"speed\": 3         },         \"repulse\": {           \"distance\": 400,           \"duration\": 0.4         },         \"push\": {           \"particles_nb\": 4         },         \"remove\": {           \"particles_nb\": 2         }       }     },     \"retina_detect\": true   }"
+			},
+			"options_image_file" : 
+			{
+				"index" : 4,
+				"order" : 104,
+				"text" : "Use Background Image File",
+				"type" : "bool",
+				"value" : false
+			},
+			"schemecolor" : 
+			{
+				"order" : 0,
+				"text" : "ui_browse_properties_scheme_color",
+				"type" : "color",
+				"value" : "0.13725490196078433 0.15294117647058825 0.2549019607843137"
+			}
+		}
+	},
+	"preview" : "preview.jpg",
+	"tags" : [ "Relaxing" ],
+	"title" : "Custom Particles",
+	"type" : "web",
+	"version" : 0,
+	"visibility" : "public",
+	"workshopid" : 1422309649,
+	"workshopurl" : "steam://url/CommunityFilePage/1422309649"
+}
