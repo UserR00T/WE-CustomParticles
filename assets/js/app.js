@@ -54,7 +54,6 @@ const globalProperties = {
   background_repeat: ({ value }) => value,
   // Only return a value if not empty
   background_image: ({ value }) => value ? `url('${value}')` : null,
-
   background_image_file: ({ value }) => {
     if (!value) {
       // Clear background-image style when empty value
@@ -81,7 +80,6 @@ window.wallpaperPropertyListener = {
       const cssKey = Array.isArray(result) ? result[0] : key.replace('_', '-');
       // Grab result if return type is array
       const cssResult = Array.isArray(result) ? result[1] : result;
-      console.log('key', cssKey, key, value, cssResult, result);
       // Select DOM element by selector, and set value to result
       document.querySelector('main > canvas').style[cssKey] = cssResult;
     }
